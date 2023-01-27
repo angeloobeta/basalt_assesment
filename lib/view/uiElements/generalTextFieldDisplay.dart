@@ -186,7 +186,7 @@ class FormattedTextFields extends StatelessWidget {
       height: sS(context).cH(height: height),
       width: sS(context).cW(width: width),
       decoration: BoxDecoration(
-        color: white,
+        color: hexColor("263238"),
         border: enabled == false
             ? Border.all(color: textFieldText, width: 1.0)
             : Border.all(color: transparent, width: 0.0),
@@ -202,7 +202,7 @@ class FormattedTextFields extends StatelessWidget {
         // this function to validate the
         // text field as the user types in it
         autofocus: autoFocus!,
-        cursorColor: white,
+        cursorColor: black,
         enabled: enabled ?? true,
         keyboardType: keyInputType,
         obscureText: obscureText ?? false,

@@ -47,9 +47,15 @@ class BaseUi extends StatelessWidget {
                     bottom: false,
                     top: safeTop ?? false,
                     child:  Container(
+                      decoration:  BoxDecoration(
+                          color: hexColor("263238"),
+                        image: const DecorationImage(
+                          fit: BoxFit.fill,
+                            image: AssetImage('images/basalt_background.png'))
+                      ),
                             width: double.infinity,
                             height: double.infinity,
-                            color: hexColor("607D8B"),
+
                             child: Stack(
                               children: children,
                             ),
